@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Info</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8; /* Soft pastel blue */
+      color: #334155; /* Dark slate */
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #2563eb; /* Vibrant blue */
+      margin-bottom: 40px;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #475569; /* Medium gray-blue */
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #2563eb;
+      color: white;
+      outline: none;
+      cursor: pointer;
+    }
+
+    main {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-bottom: 25px;
+      user-select: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    li {
+      margin-bottom: 20px;
+      user-select: text;
+    }
+
+    mark {
+      background-color: #bfdbfe; /* Light pastel blue */
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #1e40af; /* Darker blue */
+    }
+  </style>
+</head>
+<body>
+
+  <header>Contact Information</header>
+
+  <nav aria-label="Primary navigation">
+    <a href="mywebsite.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="courses.html">Courses</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+
+  <main role="main">
+    <h2>📬 Contact Info</h2>
+    <ul>
+      <li>📧 Personal Email – <mark>jhansireddy374@gmail.com</mark></li>
+      <li>🏫 College Email – <mark>23BQ1A42H3@vvit.net</mark></li>
+    </ul>
+  </main>
+
+</body>
+</html>

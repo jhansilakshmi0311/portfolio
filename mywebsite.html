@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jhansi Lakshmi | Student Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffefc;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .top-bar {
+      background-color: #222;
+      color: #ff9800;
+      padding: 10px 20px;
+      text-align: right;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 18px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #ff9800;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    .navbar li {
+      font-weight: 600;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ff9800;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: url('profile2.jpg') center/cover no-repeat;
+      height: 90vh;
+      padding-left: 60px;
+    }
+
+    .hero-content {
+      padding: 40px;
+      max-width: 550px;
+      text-align: left;
+      border-radius: 16px;
+      /* Removed background-color and box-shadow for clear image */
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      font-weight: 500;
+      color: #f0f0f0;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero button {
+      background-color: #ff9800;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #e67e00;
+      transform: translateY(-2px);
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .info-box {
+      flex: 1 1 30%;
+      background-color: #fff8f0;
+      border: 2px solid #ffe0b2;
+      padding: 30px;
+      border-radius: 14px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .info-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(255, 152, 0, 0.3);
+    }
+
+    .info-box h3 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      color: #ff9800;
+    }
+
+    .info-box p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .info-box a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #ff9800;
+      font-weight: 600;
+    }
+
+    .info-box a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1024px) {
+      .info-box {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 0 20px;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.2em;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+      }
+
+      .info-box {
+        flex: 1 1 100%;
+      }
+
+      .navbar ul {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="top-bar">
+    Contact: jhansireddy374@gmail.com | +91 98765 43210
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">Jhansi Lakshmi</div>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact info.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Jhansi Lakshmi</h1>
+      <p>Aspiring Engineer | Student at VVIT</p>
+      <button onclick="window.location.href='About.html'">Get Started</button>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-box">
+      <h3>About Me</h3>
+      <p>Know more about my journey, interests, and goals.</p>
+      <a href="About.html">Read More</a>
+    </div>
+
+    <div class="info-box">
+      <h3>Certifications</h3>
+      <p>Courses and certifications I've completed recently.</p>
+      <a href="certifications.html">View</a>
+    </div>
+
+    <div class="info-box">
+      <h3>Courses</h3>
+      <p>Subjects and training programs I've attended.</p>
+      <a href="courses.html">Explore</a>
+    </div>
+
+    <div class="info-box">
+      <h3>Contact</h3>
+      <p>Reach out via email or connect with me online.</p>
+      <a href="contact info.html">Get in Touch</a>
+    </div>
+
+    <div class="info-box">
+      <h3>Academics</h3>
+      <p>Subjects, achievements, and academic progress.</p>
+      <a href="academics.html">View</a>
+    </div>
+
+    <div class="info-box">
+      <h3>Projects</h3>
+      <p>Python, machine learning, and web-based projects.</p>
+      <a href="projects.html">View</a>
+    </div>
+  </section>
+</body>
+</html>

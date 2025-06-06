@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications - Grid Layout</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9fafb;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    header {
+      background-color: #222;
+      color: #ff7f00;
+      width: 100%;
+      padding: 30px 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      user-select: none;
+    }
+
+    nav {
+      background-color: #333;
+      width: 100%;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      margin-bottom: 50px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 18px;
+      padding: 10px 18px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #ff7f00;
+      color: #fff;
+      outline: none;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 95%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      padding-bottom: 60px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(255, 127, 0, 0.15);
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(255, 127, 0, 0.3);
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #ff7f00;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #222;
+      text-decoration: none;
+      text-align: center;
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+      user-select: text;
+    }
+
+    .card a:hover,
+    .card a:focus {
+      color: #ff7f00;
+      outline: none;
+    }
+
+    .issuer {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #666;
+      text-align: center;
+      user-select: text;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 2rem;
+        padding: 25px 0;
+      }
+      nav a {
+        margin: 8px 10px;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+      }
+      .card {
+        padding: 25px 20px;
+      }
+      .icon {
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
+      .card a {
+        font-size: 1.1rem;
+      }
+      .issuer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Certifications</header>
+
+  <nav>
+    <a href="mywebsite.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="courses.html">Courses</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <main class="container">
+    <div class="card" tabindex="0">
+      <div class="icon">📄</div>
+      <a href="C:\Users\jhans\OneDrive\Attachments\Desktop\FSD\GENAI.pdf" target="_blank" rel="noopener noreferrer">GEMINI AI – L4G</a>
+      <div class="issuer">Issued by L4G</div>
+    </div>
+
+    <div class="card" tabindex="0">
+      <div class="icon">🤖</div>
+      <a href="C:\Users\jhans\OneDrive\Attachments\Desktop\FSD\guvi_AIcertificate.pdf" target="_blank" rel="noopener noreferrer">ARTIFICIAL INTELLIGENCE – Guvi AI</a>
+      <div class="issuer">Issued by Guvi AI</div>
+    </div>
+
+    <div class="card" tabindex="0">
+      <div class="icon">🎓</div>
+      <span><strong>DATABASE MANAGEMENT SYSTEMS</strong></span>
+      <div class="issuer">Issued by NPTEL</div>
+    </div>
+  </main>
+
+</body>
+</html>
